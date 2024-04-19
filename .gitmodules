@@ -1,0 +1,3 @@
+[submodule "themes/themes/catppuccin"]
+	path = themes/themes/catppuccin
+	url = git@github.com:uncomfyhalomacro/catppuccin-zola.git

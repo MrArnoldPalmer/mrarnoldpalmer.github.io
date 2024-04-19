@@ -3,7 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title>A Imposter</title>
+  <title>An Imposter</title>
+
+  {% block css %}
+    <link rel="stylesheet" href="{{ get_url(path="base.css") | safe }}">
+  {% endblock css %}
 </head>
 
 <body>

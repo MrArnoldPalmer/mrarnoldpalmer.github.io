@@ -1,16 +1,21 @@
 # The URL the site will be built for
 base_url = "https://mrarnoldpalmer.github.io/"
-
-# Whether to automatically compile all Sass files in the sass directory
+title = "An Imposter"
+description = "Impersonating a software engineer"
 compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
+theme = "catppuccin"
 
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+extra_syntaxes_and_themes = ["themes/catppuccin/static/assets/highlighting/catppuccin"]
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "Catppuccin-mocha", filename = "syntax-theme-dark.css" },
+  { theme = "Catppuccin-latte", filename = "syntax-theme-light.css" },
+]
 
 [extra]
 # Put all your custom variables here
