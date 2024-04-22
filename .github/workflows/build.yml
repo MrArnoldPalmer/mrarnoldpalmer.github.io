@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
+        with:
+          submodules: true
       - name: add missing dir
         run: mkdir themes/catppuccin/templates
       - name: build_and_deploy
